@@ -24,6 +24,7 @@ export 'package:cloud_firestore_platform_interface/cloud_firestore_platform_inte
         Timestamp,
         Source,
         GetOptions,
+        ServerTimestampBehavior,
         SetOptions,
         DocumentChangeType,
         PersistenceSettings,
