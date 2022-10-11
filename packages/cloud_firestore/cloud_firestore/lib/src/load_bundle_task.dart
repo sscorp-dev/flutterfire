@@ -2,7 +2,7 @@ part of cloud_firestore;
 
 class LoadBundleTask {
   LoadBundleTask._(this._delegate) {
-    LoadBundleTaskPlatform.verifyExtends(_delegate);
+    LoadBundleTaskPlatform.verify(_delegate);
   }
 
   final LoadBundleTaskPlatform _delegate;

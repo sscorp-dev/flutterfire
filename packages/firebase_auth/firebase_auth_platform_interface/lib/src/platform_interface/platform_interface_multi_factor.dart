@@ -67,8 +67,8 @@ class MultiFactorAssertionPlatform extends PlatformInterface {
   static final Object _token = Object();
 
   /// Ensures that any delegate class has extended a [MultiFactorResolverPlatform].
-  static void verifyExtends(MultiFactorAssertionPlatform instance) {
-    PlatformInterface.verifyToken(instance, _token);
+  static void verify(MultiFactorAssertionPlatform instance) {
+    PlatformInterface.verify(instance, _token);
   }
 }
 
@@ -86,8 +86,8 @@ class MultiFactorResolverPlatform extends PlatformInterface {
   static final Object _token = Object();
 
   /// Ensures that any delegate class has extended a [MultiFactorResolverPlatform].
-  static void verifyExtends(MultiFactorResolverPlatform instance) {
-    PlatformInterface.verifyToken(instance, _token);
+  static void verify(MultiFactorResolverPlatform instance) {
+    PlatformInterface.verify(instance, _token);
   }
 
   /// List of [MultiFactorInfo] which represents the available
@@ -173,7 +173,7 @@ class PhoneMultiFactorGeneratorPlatform extends PlatformInterface {
 
   /// Sets the [PhoneMultiFactorGeneratorPlatform.instance]
   static set instance(PhoneMultiFactorGeneratorPlatform instance) {
-    PlatformInterface.verifyToken(instance, _token);
+    PlatformInterface.verify(instance, _token);
     _instance = instance;
   }
 
